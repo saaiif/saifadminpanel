@@ -1,0 +1,416 @@
+.product-page {
+	background-color: #4e657a;
+	margin: 0;
+}
+.pro-container {
+	margin: 0 9%;
+	/* margin-top: 15px;
+    margin-bottom: 15px; */
+	display: flex;
+}
+.pl-con {
+	width: 68%;
+	margin-bottom: 95px;
+	height: 76%;
+	margin-right: 30px;
+	background-color: #435c70;
+	margin-top: 50px;
+	box-shadow: 1px 1px 5px 0 #455c71;
+}
+.pl {
+	height: 445px;
+	margin: 40px;
+	margin-bottom: 15px;
+	overflow-y: scroll;
+	background-color: #435c70;
+}
+
+table {
+	background-color: #50697f;
+	color: #fff;
+	border-collapse: collapse;
+	margin: 0;
+	height: 40%;
+	font-size: 88%;
+}
+.l-table {
+	width: 100%;
+}
+thead {
+	background-color: #486177;
+	color: #fff;
+	font-size: 12px;
+}
+tr {
+	transition: all 0.2s ease;
+	font-weight: 600;
+}
+table thead th {
+	padding: 20px 18px;
+}
+table tbody th {
+	padding: 25px 20px;
+	border-top: 1px solid #415a70;
+}
+table tbody td {
+	padding-left: 30px;
+	border-top: 1px solid #415a70;
+	padding: 15px 28px;
+}
+table input {
+	background-color: #394e64;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+table tbody i {
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #394e64;
+	font-size: 18px;
+	display: inline-block;
+	width: 40px;
+
+	text-align: center;
+	cursor: pointer;
+	font-weight: 600;
+}
+.pc-con {
+	background-color: #435c70;
+	margin-bottom: 60px;
+	width: 28.5%;
+	height: 610px;
+	margin-top: 50px;
+	box-shadow: 1px 1px 5px 0 #455c71;
+}
+.add-btn,
+.de-se-btn {
+	width: 89.3%;
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	padding: 16px 20px;
+	color: #fff;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.de-se-btn {
+	margin-bottom: 50px;
+}
+
+.add-btn:hover {
+	background-color: #435c70;
+	color: #f5a623;
+}
+
+.de-se-btn:hover {
+	background-color: #435c70;
+	color: #f5a623;
+}
+
+.pc h2 {
+	font-size: 1.1rem;
+	color: #fff;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.right-tc {
+	height: 405px;
+	margin-bottom: 1px;
+	overflow-y: scroll;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow-x: hidden;
+}
+.r-table {
+	width: 315px;
+	height: 465px;
+	padding-left: 50px;
+	padding-left: 33px;
+	padding-top: 12px;
+	padding-bottom: 15px;
+}
+.category-btn {
+	margin-top: 12px;
+	margin-left: 10px;
+	width: 93%;
+	padding: 16px 15px;
+	color: #fff;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.category-btn:hover {
+	background-color: transparent;
+	color: #f5a623;
+}
+@media (max-width: 1000px) {
+	.pro-container {
+		display: block;
+		margin: 50px 60px;
+		margin-bottom: 0;
+	}
+	.pc-con {
+		background-color: #435c70;
+		margin-bottom: 30px;
+		width: 68%;
+		height: 610px;
+	}
+	.r-table {
+		width: 530px;
+		height: 465px;
+	}
+	.category-btn {
+		margin-left: 40px;
+		width: 85%;
+		padding: 20px 15px;
+	}
+}
+
+@media (max-width: 574px) {
+	.pro-container {
+		display: block;
+		margin: 50px 20px;
+		margin-bottom: 0;
+	}
+	.pl-con {
+		width: 500px;
+		height: 970px;
+		margin-bottom: 50px;
+		margin: auto;
+	}
+	.l-table {
+		width: 500px;
+	}
+	.l-table thead {
+		margin-top: 40px;
+	}
+	.l-table th {
+		font-size: 20px;
+	}
+	.l-table tbody,
+	.r-table tbody {
+		font-size: 22px;
+	}
+	.l-table tbody i,
+	.r-table tbody i {
+		font-size: 30px;
+		padding: 20px;
+		border-radius: 50%;
+		margin-left: 70px;
+		margin-top: 20px;
+	}
+	.pl {
+		width: 430px;
+		height: 696px;
+		padding-top: 40px;
+	}
+	.add-btn {
+		width: 430px;
+	}
+	.de-se-btn {
+		width: 430px;
+	}
+	button {
+		padding: 25px 28px;
+		font-size: 20px;
+	}
+	.pc-con {
+		width: 500px;
+		height: 880px;
+		margin-bottom: 0px;
+		margin-right: 0;
+	}
+	.pc h2 {
+		font-size: 27px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.right-tc {
+		height: 600px;
+		margin-bottom: 30px;
+	}
+	.r-table {
+		width: 410px;
+		height: 700px;
+	}
+	.extra-space {
+		height: 50px;
+	}
+	.category-btn {
+		margin-left: 40px;
+		width: 420px;
+	}
+}
+
+@media (max-width: 1125px) {
+	.pro-container {
+		display: block;
+		margin: 50px 20px;
+		margin-bottom: 0;
+	}
+	.pl-con {
+		width: 100%;
+		height: 970px;
+		margin-bottom: 50px;
+		margin: auto;
+	}
+	
+	.l-table {
+		width: 100%;
+	}
+	.l-table thead {
+		margin-top: 40px;
+	}
+	.l-table th {
+		font-size: 16px;
+	}
+	.l-table tbody,
+	.r-table tbody {
+		vertical-align: middle;
+		/* text-align: center; */
+		font-size: 100%;
+	}
+	.l-table tbody i,
+	.r-table tbody i {
+		font-size: 18px;
+		/* padding: 20px; */
+		border-radius: 50%;
+		/* margin-left: 50px;
+		margin-top: 20px;
+		text-align: center; */
+	}
+	.pl {
+		width: 93%;
+		height: 696px;
+		padding-top: 40px;
+	}
+
+	.add-btn {
+		width: 93%;
+	}
+	.de-se-btn {
+		width: 93%;
+	}
+	button {
+		padding: 25px 28px;
+		font-size: 20px;
+	}
+	.pc-con {
+		width: 100%;
+		height: 880px;
+		/* padding: 30px; */
+	}
+	.pc h2 {
+		font-size: 27px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.right-tc {
+		width: 93%;
+		height: 600px;
+		display: block;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.r-table {
+		width: 100%;
+		height: 700px;
+	}
+	.extra-space {
+		height: 50px;
+	}
+	.category-btn {
+		margin-left: 40px;
+		width: 93%;
+	}
+}
+
+@media (max-width: 600px) {
+	.pro-container {
+		display: block;
+		margin: 50px 20px;
+		margin-bottom: 0;
+	}
+	.pl-con {
+		width: 100%;
+		height: 970px;
+		margin-bottom: 50px;
+		margin: auto;
+	}
+	.l-table {
+		width: 100%;
+	}
+	.l-table thead {
+		margin-top: 40px;
+	}
+	.l-table th {
+		font-size: 20px;
+	}
+	.l-table tbody,
+	.r-table tbody {
+		font-size: 22px;
+	}
+	.l-table tbody i,
+	.r-table tbody i {
+		font-size: 18px;
+		/* padding: 20px; */
+		border-radius: 50%;
+		/* margin-left: 50px;
+		margin-top: 20px;
+		text-align: center; */
+	}
+	.pl {
+		width: 80%;
+		height: 696px;
+		padding-top: 40px;
+	}
+
+	.add-btn {
+		width: 80%;
+	}
+	.de-se-btn {
+		width: 80%;
+	}
+	button {
+		padding: 25px 28px;
+		font-size: 20px;
+	}
+	.pc-con {
+		width: 100%;
+		height: 880px;
+		margin-bottom: 50px;
+		/* padding: 30px; */
+	}
+	.pc h2 {
+		font-size: 27px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.right-tc {
+		width: 93%;
+		height: 600px;
+		display: block;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.r-table {
+		width: 100%;
+		height: 700px;
+	}
+	.extra-space {
+		height: 50px;
+	}
+	.category-btn {
+		margin-left: 40px;
+		width: 80%;
+	}
+}

@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+.topbottom {
+	background-color: #4e657a;
+	color: white;
+}
+
+.loginform {
+	width: 440px;
+	background-color: rgb(67, 92, 112);
+	box-shadow: rgb(69, 92, 113) 1px 1px 5px 0px;
+	padding: 40px;
+	box-sizing: border-box;
+	min-height: 350px;
+	line-height: 1.5;
+	max-height: 500px;
+	height: 100%;
+	max-width: 100%;
+	z-index: 100;
+	margin: auto;
+	margin-bottom: 4%;
+	margin-top: 4%;
+
+	/* margin-top: 400px; */
+}
+
+.loginform h2 {
+	text-align: center;
+}
+
+form {
+	min-height: 1px;
+	/* padding-right: 15px;
+	padding-left: 15px; */
+}
+
+.loginform h2 {
+	margin-top: 0;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	margin-bottom: 1.5rem !important;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.loginform label {
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+}
+
+label {
+	display: inline-block;
+}
+
+.formcontrol {
+	height: 50px;
+	padding: 19px 18px;
+	border-radius: 0px;
+	background-color: rgb(84, 101, 125);
+	/* border: 1px solid rgb(206, 212, 218); */
+	color: rgb(255, 255, 255);
+	border-width: 0px;
+	border: 1px solid #ced4da;
+	border-style: initial;
+	border-color: rgb(206, 212, 218);
+	border-image: initial;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-clip: padding-box;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.formcontrol input {
+	border-color: rgb(206, 212, 218);
+}
+
+input:focus {
+	background-color: #566b86;
+	outline: none;
+
+	/* border: 1px solid  #819cbe; */
+}
+
+.loginbtn {
+	color: rgb(255, 255, 255);
+	background-color: rgb(245, 166, 35);
+	font-size: 90%;
+	font-weight: 600;
+	border: 2px solid rgb(245, 166, 35);
+	width: 100%;
+	max-width: 100%;
+	border-radius: 0px;
+	padding: 13px 28px;
+	transition: all 0.2s ease 0s;
+	text-transform: uppercase !important;
+	/* display: block; */
+	transition: all 0.2s ease 0s;
+}
+
+.loginbtn:hover {
+	background-color: rgb(67, 92, 112);
+	border-color: rgb(245, 166, 35);
+	color: rgb(245, 166, 35);
+}
+
+.tryAgain {
+	margin-top: 3rem !important;
+	color: rgb(255, 255, 255);
+	background-color: rgb(245, 166, 35);
+	font-size: 90%;
+	font-weight: 600;
+	border: 2px solid rgb(245, 166, 35);
+	width: 100%;
+	max-width: 100%;
+	border-radius: 0px;
+	padding: 13px 28px;
+	transition: all 0.2s ease 0s;
+	text-transform: uppercase !important;
+	/* display: block; */
+	transition: all 0.2s ease 0s;
+}
+
+.tryAgain:hover {
+	background-color: rgb(67, 92, 112);
+	border-color: rgb(245, 166, 35);
+	color: rgb(245, 166, 35);
+}
+
+@media (max-width: 320px) {
+	.loginform {
+		width: 300px;
+		height: 100%;
+	}
+}
+
+@media(max-width:1024px){
+	.loginform {
+		width: 650px;
+		background-color: rgb(67, 92, 112);
+		box-shadow: rgb(69, 92, 113) 1px 1px 5px 0px;
+		padding: 40px;
+		box-sizing: border-box;
+		min-height: 550px;
+		line-height: 1.5;
+		min-height: 40vh;
+				max-width: 100%;
+		z-index: 100;
+		margin: auto;
+		margin-bottom: 31.5%;
+		margin-top: 31.5%;
+	
+		/* margin-top: 400px; */
+	}
+	
+}

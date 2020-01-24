@@ -1,0 +1,439 @@
+.account-page {
+	color: #fff;
+	background-color: #4e657a;
+	margin: 0;
+}
+.extra-space {
+	background-color: #4e657a;
+	color: #4e657a;
+}
+.acc-container {
+	margin: 0 auto;
+	width: 80%;
+}
+.loa-con {
+	background-color: #435c70;
+	margin-top: 35px;
+	height: 220px;
+}
+.loa-con h2 {
+	padding: 25px 40px;
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.loa-con p {
+	margin-top: 20px;
+	padding: 0px 40px;
+}
+.dropdown {
+	background-color: #4e657a;
+	color: #9db5cc;
+	margin: 20px 40px;
+	width: 92.6%;
+	font-size: 17px;
+	border: 0;
+	padding: 15px 20px;
+}
+option {
+	padding: 20px 30px;
+	font-size: 15px;
+}
+.as-con {
+	display: flex;
+}
+.avatar-con {
+	background-color: #435c70;
+	height: 510px;
+	width: 36%;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+.avatar-con h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	padding: 20px 40px;
+	font-size: 1.1rem;
+}
+.avatar-con i {
+	position: absolute;
+	left: 27%;
+	top: 105%;
+	margin-left: -75px;
+	margin-top: -70px;
+	z-index: 1000;
+	padding: 14px;
+	border-radius: 50%;
+	background-color: rgba(57, 78, 100, 0.7);
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	display: none;
+	transition: all 0.2s ease;
+}
+.avatar-con img {
+	cursor: pointer;
+	width: 310px;
+	margin: auto;
+	height: 255px;
+	display: block;
+}
+
+.highcursor {
+	cursor: pointer;
+}
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.btn {
+	padding: 15px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	width: 310px;
+	height: 50px;
+	margin: 0 30px;
+	margin-top: 39px;
+	color: #fff;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #f5a623;
+}
+
+.image-con:hover i {
+	display: block;
+}
+.set-con {
+	background-color: #435c70;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+.set-con h2 {
+	margin-bottom: 30px;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-left: 40px;
+	padding-top: 20px;
+}
+.set-con .acc-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 40px;
+	/* margin-right: 15px; */
+}
+.form {
+	border-radius: 0;
+	background-color: #54657d;
+	color: #fff;
+	border: 0;
+	display: flex;
+	margin-top: 10px;
+}
+
+input[type="file" i] {
+	width: 300px;
+}
+
+.probtn {
+	padding: 20px 30px;
+	width: 98%;
+}
+.upload-pic-btn {
+	font-weight: 600;
+	color: #fff;
+	padding: 15px 28px;
+	text-align: center;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	margin-top: 25px;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	width: 89%;
+	margin-left: 30px;
+}
+.delete-btn {
+	width: 290%;
+	padding: 15px 15px;
+	position: relative;
+	top: 10px;
+	left: 5px;
+	margin-bottom: 30px;
+	color: #fff;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+	font-weight: 600;
+	cursor: pointer;
+	margin-left: -4px;
+}
+.update-btn {
+	cursor: pointer;
+	padding: 15px 15px;
+	width: 47.9%;
+	height: 50px;
+	margin-top: 39px;
+	color: #fff;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.update-btn:hover {
+	color: #f5a623;
+	background-color: transparent;
+	border: 2px solid #f5a623;
+}
+
+.delete-btn:hover {
+	color: #f5a623;
+	background-color: transparent;
+	border: 2px solid #f5a623;
+}
+.acc-form-group {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.acc-form-group input {
+	display: block;
+	width: 290px;
+	height: 50px;
+	padding: 0 15px;
+}
+
+.spacebtw {
+	margin-right: 25px;
+}
+
+@media (max-width: 1125px) {
+	.update-btn {
+		width: 275px;
+		/* font-size: 0.8rem; */
+	}
+	.acc-form-group input {
+		width: 275px;
+	}
+	
+	.delete-btn {
+		width: 560px;
+		z-index: 1;
+	}
+	.btn {
+		width: 150px;
+		padding-top: 6px;
+	}
+	.avatar-con img {
+		width: 150px;
+
+		display: block;
+		margin: auto;
+	}
+	.spacebtw {
+		margin-right: 10px;
+	}
+	.dropdown {
+		width: 90%;
+		font-size: 18px;
+	}
+	input[type="file" i] {
+		width: 41px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.update-btn {
+		width: 400px;
+		font-size: 0.8rem;
+	}
+	.acc-form-group input {
+		width: 400px;
+	}
+	.delete-btn {
+		width: 400px;
+		z-index: 1;
+	}
+	.btn {
+		width: 210px;
+	}
+	.avatar-con img {
+		width: 220px;
+
+		display: block;
+		margin: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.update-btn {
+		width: 293px;
+		/* font-size: 0.8rem; */
+	}
+	.acc-form-group input {
+		width: 294px;
+	}
+	.delete-btn {
+		width: 292px;
+		z-index: 1;
+	}
+	.btn {
+		width: 150px;
+		padding-top: 6px;
+	}
+	.avatar-con img {
+		width: 150px;
+
+		display: block;
+		margin: auto;
+	}
+	.spacebtw {
+		margin-right: 1px;
+	}
+	.dropdown {
+		width: 540px;
+		font-size: 25px;
+	}
+	input[type="file" i] {
+		width: 41px;
+	}
+}
+
+/* @media (max-width: 574px)
+{
+.dropdown {
+    margin: 0px 40px;
+    width: 420px;
+    font-size: 25px;
+    padding: 25px 20px;
+}
+.delete-btn
+{
+    width:435px;
+    padding:25px 15px;
+}
+.update-btn
+{
+    width:435px;
+    height:80px;
+}
+.choose-file
+{
+    position: absolute;
+    top:970px;
+    left:130px;
+    height:50px;
+    background-color: transparent;
+    background-color: red;
+    opacity: 0;
+    cursor: pointer;
+}
+.as-con {
+    display: block;
+}
+.acc-container {
+    margin: 30px 20px;
+    margin-bottom:0;
+}
+.loa-con h2 {
+    padding: 25px 40px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.loa-con p {
+    padding: 0px 40px;
+    font-size: 25px;
+}
+.loa-con {
+    background-color: #435c70;
+    margin-top: 5px;
+    height: 260px;
+}
+.avatar-con {
+    height: 620px;
+    width: 500px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.avatar-con h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+}
+.avatar-con img {
+    width: 420px;
+    margin-left: 40px;
+    height: 350px;
+}
+.upload-pic-btn {
+    width: 84%;
+}
+.set-con .acc-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    margin-right: 15px;
+}
+.set-con {
+    height: 1180px;
+    margin-top: 35px;
+    width: 500px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.set-con h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.form {
+    padding: 19px 18px;
+    height: 25px;
+    display: block;
+    width: 400px;
+    margin-right: 25px;
+}
+.avatar-con i
+{
+   font-size: 20px;
+   border-radius:50%;
+   padding:15px;
+   position: absolute;
+   top:720px;
+   left:250px;
+}
+.acc-form-group
+{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-size: 20px;
+}
+.acc-form-group input
+{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+} */

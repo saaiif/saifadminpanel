@@ -1,0 +1,95 @@
+.order-table
+{
+    background-color: #50697f;
+    color: #fff;
+    font-size: 85%;
+    margin-left:40px;
+    margin-bottom:40px;
+    width:93%;
+}
+.sep-line
+{
+    border-bottom:2px solid #435c70;
+   
+}
+.sep-line:hover
+{
+    opacity: 0.7;
+    background-color: #435c70;
+}
+.pending
+{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+    background-color: #efc54b;
+    box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+}
+.moving
+{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+    background-color: #9be64d;
+    box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+}
+.cancelled
+{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+    background-color: #da534f;
+    box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+}
+.deliver
+{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+    background-color: brown;
+    box-shadow: 0 0 8px brown, inset 0 0 8px brown;
+}
+.order-row
+{
+    margin-bottom:100px;
+}
+.order-row td
+{
+    padding:0;
+    margin:0;
+    padding-left:40px;
+    font-size: 88%;
+}
+
+
+@media (max-width: 574px)
+{
+.order-table thead
+{
+    font-size:20px;
+}
+.order-table tbody
+{
+    font-size: 20px;
+}
+.order-table tbody th
+{
+    padding: 60px 20px;
+}
+}

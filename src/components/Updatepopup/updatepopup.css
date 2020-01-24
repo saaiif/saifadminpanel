@@ -1,0 +1,38 @@
+.upopup-box {
+	width: 32%;
+	height: 47%;
+	position: absolute;
+	top: 33%;
+	left: 30%;
+	box-sizing: border-box;
+	border: 2px solid rgb(75, 69, 69);
+	/* border-radius: 20px; */
+	box-shadow: 0 0 8px black;
+	background-color: #ffffff;
+	opacity: 0.8;
+	/* transition-duration: 2s; */
+	transition: all 0.5s ease-out;
+}
+.upopup-box i {
+	text-align: center;
+	color: #555;
+	/* color: #fff; */
+	margin-left: 92%;
+	margin-top: 16px;
+	font-size: 20px;
+}
+.upopup-message {
+	padding: 40px;
+	font-size: 1.5rem;
+	margin-top: 10%;
+	background-color: #a4b0be;
+	color: black;
+}
+
+@media (max-width: 574px) {
+	.upopup-box {
+		top: 1650px;
+		left: 50px;
+		width: 120%;
+	}
+}

@@ -1,0 +1,164 @@
+.sidedraw {
+	background-color: #567086;
+	position: fixed;
+	top: 0;
+	right: 30px;
+	width: 70%;
+	width: 180px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 80px;
+	display: none;
+	z-index: 200;
+	box-shadow: rgba(255, 255, 255, 0.1) 0 0.5px 1px 1px;
+}
+
+.sidedraw {
+	text-decoration: none;
+	/* height: 50%; */
+	font-size: 90%;
+}
+
+.sidedraw ul {
+	padding: 15px;
+}
+
+/* .sidedraw ul i {
+	margin-right: 2px;
+	height: 60px;
+	width: 40px;
+} */
+
+.sidedraw li i {
+	margin: 1rem 0;
+	width: 40px;
+}
+
+.menuItems a {
+	color: #fff;
+}
+
+.menuItems li {
+	transition: all 6s ease-in;
+}
+
+.logout a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.sidedraw a:hover {
+	color: #f5a623;
+}
+
+@media (max-width: 1125px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 0;
+		right: 30px;
+		width: 70%;
+		width: 180px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 75px;
+		display: block;
+	}
+}
+
+@media (max-width: 910px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 0;
+		right: 30px;
+		width: 70%;
+		width: 180px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 75px;
+	}
+}
+
+@media (max-width: 768px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 0;
+		right: 32px;
+		width: 70%;
+		width: 180px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 75px;
+	}
+}
+
+@media (max-width: 600px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 0;
+		right: 110px;
+		width: 70%;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 411px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 1;
+		right: 23%;
+		width: 70%;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 360px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 1;
+		right: 138px;
+		width: 70%;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 56px;
+	}
+}
+@media (max-width: 375px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 1;
+		right: 148px;
+		width: 70%;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 330px) {
+	.sidedraw {
+		background-color: #567086;
+		position: fixed;
+		top: 1;
+		right: 177px;
+		width: 70%;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 56px;
+	}
+}

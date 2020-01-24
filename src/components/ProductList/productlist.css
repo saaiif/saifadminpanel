@@ -1,0 +1,30 @@
+.pdtlist {
+	margin-right: 0;
+	padding-right: 0;
+}
+.checkbox {
+	background-color: #394e64 !important;
+	-webkit-appearance: none;
+	width: 25px !important;
+	height: 25px !important;
+	border-radius: 50%;
+	position: relative;
+	outline: none;
+	background-position: center;
+
+	box-sizing: border-box;
+
+	transition: all 0.1s linear;
+}
+.checkbox:checked::after {
+	content: '\2713';
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	top: 0px;
+	left: 5px;
+	color: #fff;
+}
+.tm-product-delete-icon:hover {
+	opacity: 0.5;
+}
