@@ -234,7 +234,7 @@ input[type="file" i] {
 	.acc-form-group input {
 		width: 275px;
 	}
-	
+
 	.delete-btn {
 		width: 560px;
 		z-index: 1;
@@ -318,122 +318,58 @@ input[type="file" i] {
 	}
 }
 
-/* @media (max-width: 574px)
-{
-.dropdown {
-    margin: 0px 40px;
-    width: 420px;
-    font-size: 25px;
-    padding: 25px 20px;
-}
-.delete-btn
-{
-    width:435px;
-    padding:25px 15px;
-}
-.update-btn
-{
-    width:435px;
-    height:80px;
-}
-.choose-file
-{
-    position: absolute;
-    top:970px;
-    left:130px;
-    height:50px;
-    background-color: transparent;
-    background-color: red;
-    opacity: 0;
-    cursor: pointer;
-}
-.as-con {
-    display: block;
-}
-.acc-container {
-    margin: 30px 20px;
-    margin-bottom:0;
-}
-.loa-con h2 {
-    padding: 25px 40px;
-    font-size: 30px;
-    padding-bottom: 15px;
-}
-.loa-con p {
-    padding: 0px 40px;
-    font-size: 25px;
-}
-.loa-con {
-    background-color: #435c70;
-    margin-top: 5px;
-    height: 260px;
-}
-.avatar-con {
-    height: 620px;
-    width: 500px;
-    margin-top: 35px;
-    margin-bottom: 50px;
-}
-.avatar-con h2 {
-    font-size: 25px;
-    margin-bottom: 30px;
-    padding: 30px 40px;
-}
-.avatar-con img {
-    width: 420px;
-    margin-left: 40px;
-    height: 350px;
-}
-.upload-pic-btn {
-    width: 84%;
-}
-.set-con .acc-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 40px;
-    margin-right: 15px;
-}
-.set-con {
-    height: 1180px;
-    margin-top: 35px;
-    width: 500px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-}
-.set-con h2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-weight: 700;
-    margin-left: 40px;
-}
-.form {
-    padding: 19px 18px;
-    height: 25px;
-    display: block;
-    width: 400px;
-    margin-right: 25px;
-}
-.avatar-con i
-{
-   font-size: 20px;
-   border-radius:50%;
-   padding:15px;
-   position: absolute;
-   top:720px;
-   left:250px;
-}
-.acc-form-group
-{
-    margin-bottom: 25px;
-    margin-top:20px;
-    font-size: 20px;
-}
-.acc-form-group input
-{
-    font-size: 20px;
-    margin-top: 20px;
-}
+@media (max-width: 574px) {
+	.dropdown {
+		margin: 0px 36px;
+		width: 262px;
+		font-size: 20px;
+		padding: 22px 15px;
+	}
+	.loa-con p {
+		margin: 5px 0;
+		padding: 0px 40px;
+	}
+	.as-con {
+		display: block;
+	}
+	.update-btn {
+		width: 293px;
+		/* font-size: 0.8rem; */
+	}
+	.acc-form-group input {
+		width: 265px;
+	}
+	.delete-btn {
+		width: 248px;
+		z-index: 1;
+	}
+	.btn {
+		width: 230px;
+		margin-left: 50px;
+		/* padding-top: 6px; */
+	}
+	.avatar-con {
+		width: 330px;
+	}
+	.avatar-con img {
+		width: 250px;
 
-} */
+		display: block;
+		margin: auto;
+	}
+	.avatar-con i {
+		position: absolute;
+		left: 60%;
+		top: 90%;
+		cursor: pointer;
+	}
+	.set-con {
+		margin-left: 2px;
+	}
+	.spacebtw {
+		margin-right: 1px;
+	}
+	input[type="file" i] {
+		width: 41px;
+	}
+}
