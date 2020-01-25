@@ -319,6 +319,14 @@ input[type="file" i] {
 	}
 }
 
+@media (min-width:411px){
+	input[type="file" i] {
+		width: 400px;
+		position: absolute;
+		bottom: 20%;
+	}
+}
+
 @media (max-width: 574px) {
 	.dropdown {
 		margin: 0px 36px;

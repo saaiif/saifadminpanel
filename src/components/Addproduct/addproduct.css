@@ -22,13 +22,13 @@
 .detail-section {
 	width: 50%;
 }
-.proName input{
-    background-color: #54657d;
+.proName input {
+	background-color: #54657d;
 	color: #fff;
-    border: 0;
-    height: 50px;
-    padding: 19px 18px;
-    margin: 10px 0;
+	border: 0;
+	height: 50px;
+	padding: 19px 18px;
+	margin: 10px 0;
 }
 textarea,
 .select-cat {
@@ -51,18 +51,17 @@ textarea {
 	width: 88%;
 }
 
-.inputs-con input{
-    background-color: #54657d;
-    color: #fff;
-    width: 150px;
-    padding: 15px 10px;
-    border: 1px solid transparent;
-    margin: 10px 0;
-
+.inputs-con input {
+	background-color: #54657d;
+	color: #fff;
+	width: 150px;
+	padding: 15px 10px;
+	border: 1px solid transparent;
+	margin: 10px 0;
 }
 
-input[type="number"]{
-   height: 52px;
+input[type="number"] {
+	height: 52px;
 }
 .select-cat {
 	width: 88%;
@@ -112,7 +111,7 @@ input[type="date"] {
 }
 .upload-btn {
 	font-size: 90%;
-    font-weight: 600;
+	font-weight: 600;
 	color: #fff;
 	padding: 15px 28px;
 	text-align: center;
@@ -137,7 +136,7 @@ input[type="date"] {
 	color: #fff;
 	border: 2px solid #f5a623;
 	font-size: 90%;
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .add-pdt-btn:hover {
@@ -146,75 +145,107 @@ input[type="date"] {
 	cursor: pointer;
 }
 
-@media (max-width: 574px) {
-	.sections-con {
-		margin: 40px;
-		display: block;
-	}
+@media (max-width: 411px) {
 	.add-container {
-		margin: 55px 20px;
+		width: 80%;
 	}
 	.add-container h2 {
-		font-size: 1.6rem;
+		font-size: 1.1rem;
+		font-weight: 700;
 		margin-bottom: 30px;
 		margin-left: 40px;
 		padding-top: 40px;
 	}
-	#name {
-		width: 380px;
-		height: 40px;
+	.sections-con {
+		margin: 40px;
+		display: block;
 	}
-	.add-form label {
-		font-size: 25px;
+	.detail-section {
+		width: 50%;
 	}
+	.proName input {
+		background-color: #54657d;
+		color: #fff;
+		border: 0;
+		height: 50px;
+		padding: 19px 18px;
+		margin: 10px 0;
+	}
+	textarea,
+	.select-cat {
+		padding: 19px 18px;
+		border-radius: 0;
+		border: 0;
+		display: block;
+		width: 185px;
+		margin-top: 10px;
+		margin-right: 25px;
+		margin-bottom: 20px;
+		font-family: 'Bree Serif', serif;
+	}
+	#name,
+	.select-cat,
 	textarea {
-		width: 380px;
-		height: 120px;
+		width: 250px;
 	}
-	.detail-section input {
-		width: 380px;
-		height: 40px;
+
+	.select-cat {
+		height: 64px;
 	}
-	.upload-img {
-		width: 420px;
-		height: 310px;
-		margin-left: 0;
+
+	.detail-section {
+		/* width: 50%; */
+		display: block;
 	}
-	.img-section i {
-		margin-left: 180px;
-		margin-top: 130px;
-		border-radius: 50%;
-		font-size: 20px;
+
+	.inputs-con{
+		display: block;
 	}
-	.upload-btn {
-		padding: 23px 28px;
-		margin-top: 45px;
-		width: 420px;
-		font-size: 20px;
-		margin-left: 0px;
+	.inputs-con input {
+		
+		width: 250px;
+		padding: 15px 10px;
+		border: 1px solid transparent;
+		margin: 10px 0;
 	}
 	.add-pdt-btn {
-		margin-left: 0px;
-		margin-right: 40px;
-		width: 420px;
-		margin-top: 0;
-		margin-bottom: 40px;
+		width: 199%;
+		/* margin-top: 111px; */
 	}
-	.select-cat {
-		font-size: 25px;
-		padding: 10px;
-		width: 415px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		height: 70px;
+
+	input[type="number"] {
+		height: 52px;
 	}
-	.inputs-con {
+	.upload-img {
+		width: 251px;
+		margin-left: 30px;
 		display: block;
+		margin: auto;
+	}
+	.upload-btn {
+		cursor: pointer;
+		margin-top: 12px;
+
+		width: 236px;
+		margin-left: 6px;
+		margin-bottom: 12px;
+	}
+	.pdt-choose-file {
+		position: absolute;
+		top: 100%;
+		left: 54%;
+		background-color: red;
+		opacity: 0;
+		cursor: pointer;
+		height: 50px;
 	}
 }
 
 @media (max-width: 1125px) {
 	.add-container {
-		margin: 4% 13%;
+		margin: auto;
+		display: block;
+		width: 80%;
+		margin: 4% auto;
 	}
 }

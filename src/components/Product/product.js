@@ -20,8 +20,7 @@ class Product extends Component {
 			return { sidebartoggler: !prevState.sidebartoggler };
 		});
 	};
-	//-----------CHANGE---------------
-	//PASSED THROUGH PROPS
+
 	onChkBoxClick = (selectedProductId) => {
 		console.log(this.state.pageData.products);
 		let array = this.state.pageData.products;
@@ -32,8 +31,7 @@ class Product extends Component {
 			pageData: object
 		});
 	};
-	//------------------CHANGE----
-	//MADE A COMMON DELETE SINGLE ROW FUNCTION AND PASSED THROUGH PROPS
+
 	onDeleteIconClick = (listName, id) => {
 		let tempObject = JSON.parse(localStorage.getItem('Response'));
 		let array;
@@ -53,8 +51,7 @@ class Product extends Component {
 			pageData: tempObject.productsPage
 		});
 	};
-	//---------CHANGE-----------------
-	//DELETE SELECTED ROWS PASSED THROUGH PROPS
+
 	onDeleteSelectedBtnClick = () => {
 		let object = JSON.parse(localStorage.getItem('Response'));
 		let list = this.state.pageData.products;
@@ -81,7 +78,6 @@ class Product extends Component {
 				<div className="pro-container">
 					<div className="pl-con">
 						<div className="pl">
-							{/*---------------CHANGE-------------------*/}
 							<ProductList
 								propsToPass={{
 									productListData: this.state.pageData.products,
@@ -102,7 +98,6 @@ class Product extends Component {
 							<h2>Product categories</h2>
 							<div className="right-tc">
 								<table className="r-table">
-									{/*---------------CHANGE-------------------*/}
 									<Categories
 										propsToPass={{
 											categoriesPageData: this.state.pageData.categories,
@@ -116,11 +111,10 @@ class Product extends Component {
 									ADD NEW CATEGORY
 								</button>
 							</Link>
-							{/* {this.props.showPopup?<Popup/>:null} */}
 						</div>
 					</div>
 				</div>
-				{/* <div className="extra-space"></div> */}
+
 				<Footer />
 			</div>
 		);

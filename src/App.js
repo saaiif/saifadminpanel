@@ -19,13 +19,12 @@ class App extends Component {
 		axios
 			.get('https://reactmusicplayer-ab9e4.firebaseio.com/project-data.json')
 			.then((response) => {
-				console.log(response.data);
 				response.data.productsPage.products.map((item) => (item.selected = false));
 				localStorage.setItem('Response', JSON.stringify(response.data));
 				this.props.onUserLoggedIn();
 			})
 			.catch((err) => {
-				console.log(err + ' =>please refresh the page');
+				// console.log(err + ' =>please refresh the page');
 			});
 	}
 	render() {

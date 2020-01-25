@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import './addproduct.css';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Navbars from '../Navbar/navbar2';
+import Footer from '../Footer/footer';
+import Sidebar from '../sidebar/sidebar';
 
 class Addproduct extends Component {
 	state = {
-		/*pdtnameField:false,
-        descField:false,
-        categoryField:false,
-        dateField:false,
-        unitsField:false*/
+		sidebartoggler: false,
 		addPdtImg: '',
 		pic:
 			'https://www.lifewire.com/thmb/yLFRNBmwLcKDRnkaZ0B0nXgLAQM=/960x640/filters:no_upscale():max_bytes(150000):strip_icc()/upload-2c485b5b6fef41f39a05afb9adfce03e.png'
@@ -63,6 +62,12 @@ class Addproduct extends Component {
 		console.log(JSON.parse(localStorage.getItem('Response')));
 	};
 
+	drawerbuttons = () => {
+		this.setState((prevState) => {
+			return { sidebartoggler: !prevState.sidebartoggler };
+		});
+	};
+
 	onPicUpload = (e) => {
 		var img = this.state.addPdtImg;
 		var object = JSON.parse(localStorage.getItem('Response'));
@@ -81,9 +86,16 @@ class Addproduct extends Component {
 	};
 
 	render() {
+		let sidebar;
+		if (this.state.sidebartoggler) {
+			sidebar = <Sidebar />;
+		}
 		return (
 			<div className="add-page">
-			
+				<header>
+					<Navbars burgerbutton={this.drawerbuttons} />
+					{sidebar}
+				</header>
 				<div className="add-container">
 					<div>
 						<h2>Add Product</h2>
@@ -92,7 +104,6 @@ class Addproduct extends Component {
 						<div className="detail-section">
 							<form className="add-form" onSubmit={this.handleSubmit}>
 								<div className="proName">
-								
 									<label for="name">Product Name</label>
 									<input
 										id="name"
@@ -124,7 +135,6 @@ class Addproduct extends Component {
 									<div className="expiry_date">
 										<label for="expiry_date">Expire Date</label>
 										<input
-											
 											name="expiry_date"
 											type="date"
 											required
@@ -164,7 +174,7 @@ class Addproduct extends Component {
 						</div>
 					</div>
 				</div>
-			
+				<Footer />
 			</div>
 		);
 	}
