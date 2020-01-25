@@ -94,17 +94,17 @@ textarea
 }
 .upload-btn
 {
-    font-weight: 600;
+    font-size: 0.8rem;
     color: #fff;
     padding: 15px 28px;
     text-align: center;
-    transition: all 0.2s ease;
     cursor: pointer;
     margin-top: 12px;
     background-color: #f5a623;
     border: 2px solid #f5a623;
     width:89%;
     margin-left: 30px;
+    font-weight: bold;
 }
 .upload-btn:hover
 {
