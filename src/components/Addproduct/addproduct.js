@@ -103,7 +103,7 @@ class Addproduct extends Component {
 								</div>
 								<div>
 									<label for="description">Description</label>
-									<textarea rows="9" onInput={(e) => this.onInputChange(e, 'description')} required />
+									<textarea rows="8" onInput={(e) => this.onInputChange(e, 'description')} required />
 								</div>
 								<div>
 									<label for="category">category</label>

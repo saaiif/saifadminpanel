@@ -30,8 +30,9 @@
 	cursor: pointer;
 }
 
-.logo h3{
+.logo h3 {
 	color: #fff;
+	cursor: pointer;
 }
 .menuItems {
 	position: absolute;
@@ -40,10 +41,8 @@
 	right: 40%;
 }
 
-.mainDiv:active{
+.mainDiv:active {
 	color: #f5a623;
-	
-
 }
 
 .menuItems i {
@@ -120,6 +119,9 @@
 	.menuItems {
 		opacity: 0;
 		visibility: hidden;
+	}
+	.logo {
+		cursor: pointer;
 	}
 
 	.logout {
@@ -201,5 +203,11 @@
 
 	.iconbars i {
 		font-size: 19px;
+	}
+}
+
+@media (max-width: 412px) {
+	.logo h3 {
+		cursor: pointer;
 	}
 }

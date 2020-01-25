@@ -39,6 +39,7 @@
     margin-top:10px;
     margin-right:25px;
     margin-bottom:20px;
+    font-family: 'Bree Serif', serif;
 }
 #name,.select-cat,textarea
 {
@@ -99,7 +100,7 @@ textarea
     text-align: center;
     transition: all 0.2s ease;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 12px;
     background-color: #f5a623;
     border: 2px solid #f5a623;
     width:89%;
@@ -109,10 +110,7 @@ textarea
 {
     background-color: transparent;
 }
-/* #fileInput
-{
-    display: block;
-} */
+
 .add-pdt-btn
 {
     margin-left:0px;
@@ -120,6 +118,17 @@ textarea
     width:197%;
     padding:16px 20px;
     margin-bottom: 40px;
+    background-color: #f5a623;
+    color: #fff;
+    border: 2px solid #f5a623;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.add-pdt-btn:hover{
+    background-color: #435c70;
+    color: #f5a623;
+    cursor: pointer;
 }
 
 @media (max-width: 574px)
