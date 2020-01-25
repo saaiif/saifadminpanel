@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './form.module.css';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class Form extends Component {
 	constructor(props) {
@@ -8,9 +9,10 @@ class Form extends Component {
 
 		let token = localStorage.removeItem('token');
 		let loggedin = false;
+
 		this.state = {
 			username: '',
-			password: '',	
+			password: '',
 			loggedin
 		};
 
@@ -23,6 +25,7 @@ class Form extends Component {
 			[event.target.name]: event.target.value
 		});
 	}
+	
 
 	submitForm(event) {
 		event.preventDefault();
@@ -52,11 +55,15 @@ class Form extends Component {
 							<input
 								className={classes.formcontrol}
 								type="text"
+								maxLength="6"
+								pattern="[a-zA-Z]{6}"
 								name="username"
 								value={this.state.username}
 								onChange={this.onChange}
 								required
 							/>
+							
+							
 							<br />
 							<label>Password</label>
 							<br />
@@ -64,12 +71,15 @@ class Form extends Component {
 								className={classes.formcontrol}
 								type="password"
 								name="password"
+								maxLength="8"
 								value={this.state.password}
 								onChange={this.onChange}
 								required
 							/>
+							
+						
 							<br />
-							<button className={classes.loginbtn}>Login</button>
+							<button className={classes.loginbtn} onClick={this.state.password}>Login</button>
 							<br />
 							<button className={classes.tryAgain}>Forgot your password?</button>
 						</form>

@@ -12,6 +12,7 @@ class Account extends Component {
 		accountName: '',
 		accountEmail: '',
 		accountPassword: '',
+		reenterPassword: '',
 		accountPhone: '',
 		pic: 'https://templatemo.com/templates/templatemo_524_product_admin/img/avatar.png',
 		pageData: JSON.parse(localStorage.getItem('Response')).accountsPage,
@@ -34,6 +35,8 @@ class Account extends Component {
 				this.setState({ accountEmail: accountData.Admin.email });
 				this.setState({ pic: accountData.Admin.profilePic });
 				this.setState({ accountPassword: accountData.Admin.password });
+
+				this.setState({ reenterPassword: accountData.Admin.password });
 				this.setState({ accountPhone: accountData.Admin.phone });
 				this.setState({ accountType: account });
 				break;
@@ -42,6 +45,8 @@ class Account extends Component {
 				this.setState({ accountEmail: accountData.Editor.email });
 				this.setState({ pic: accountData.Editor.profilePic });
 				this.setState({ accountPassword: accountData.Editor.password });
+
+				this.setState({ reenterPassword: accountData.Editor.password });
 				this.setState({ accountPhone: accountData.Editor.phone });
 				this.setState({ accountType: account });
 				break;
@@ -50,6 +55,7 @@ class Account extends Component {
 				this.setState({ accountEmail: accountData.Merchant.email });
 				this.setState({ pic: accountData.Merchant.profilePic });
 				this.setState({ accountPassword: accountData.Merchant.password });
+				this.setState({ reenterPassword: accountData.Merchant.password });
 				this.setState({ accountPhone: accountData.Merchant.phone });
 				this.setState({ accountType: account });
 				break;
@@ -58,6 +64,7 @@ class Account extends Component {
 				this.setState({ accountEmail: accountData.Customer.email });
 				this.setState({ pic: accountData.Customer.profilePic });
 				this.setState({ accountPassword: accountData.Customer.password });
+				this.setState({ reenterPassword: accountData.Customer.password });
 				this.setState({ accountPhone: accountData.Customer.phone });
 				this.setState({ accountType: account });
 		}
@@ -75,6 +82,18 @@ class Account extends Component {
 		}
 	};
 
+	onInputOtherChange = (e, name) => {
+		if (name === 'name') {
+			this.setState({ accountName: e.target.value });
+		} else if (name === 'email') {
+			this.setState({ accountEmail: e.target.value });
+		} else if (name === 'password') {
+			this.setState({ reenterPassword: e.target.value });
+		} else if (name === 'phone') {
+			this.setState({ accountPhone: e.target.value });
+		}
+	};
+
 	handleSubmit = (e) => {
 		e.preventDefault();
 		var accountData = JSON.parse(localStorage.getItem('Response'));
@@ -86,24 +105,31 @@ class Account extends Component {
 				accountData.accountsPage.Admin.name = this.state.accountName;
 				accountData.accountsPage.Admin.email = this.state.accountEmail;
 				accountData.accountsPage.Admin.password = this.state.accountPassword;
+				accountData.accountsPage.Admin.password = this.state.reenterPassword;
+
 				accountData.accountsPage.Admin.phone = this.state.accountPhone;
 				break;
 			case 'Editor':
 				accountData.accountsPage.Editor.name = this.state.accountName;
 				accountData.accountsPage.Editor.email = this.state.accountEmail;
 				accountData.accountsPage.Editor.password = this.state.accountPassword;
+
+				accountData.accountsPage.Editor.password = this.state.reenterPassword;
 				accountData.accountsPage.Editor.phone = this.state.accountPhone;
 				break;
 			case 'Merchant':
 				accountData.accountsPage.Merchant.name = this.state.accountName;
 				accountData.accountsPage.Merchant.email = this.state.accountEmail;
 				accountData.accountsPage.Merchant.password = this.state.accountPassword;
+
+				accountData.accountsPage.Merchant.password = this.state.reenterPassword;
 				accountData.accountsPage.Merchant.phone = this.state.accountPhone;
 				break;
 			case 'Customer':
 				accountData.accountsPage.Customer.name = this.state.accountName;
 				accountData.accountsPage.Customer.email = this.state.accountEmail;
 				accountData.accountsPage.Customer.password = this.state.accountPassword;
+				accountData.accountsPage.Customer.password = this.state.reenterPassword;
 				accountData.accountsPage.Customer.phone = this.state.accountPhone;
 		}
 		localStorage.setItem('Response', JSON.stringify(accountData));
@@ -120,6 +146,8 @@ class Account extends Component {
 				this.setState({ accountName: '' });
 				this.setState({ accountEmail: '' });
 				this.setState({ accountPassword: '' });
+				this.setState({ reenterPassword: '' });
+
 				this.setState({ accountPhone: '' });
 				this.setState({ accountType: '' });
 				delete accountData.accountsPage.Admin;
@@ -128,6 +156,7 @@ class Account extends Component {
 				this.setState({ accountName: '' });
 				this.setState({ accountEmail: '' });
 				this.setState({ accountPassword: '' });
+				this.setState({ reenterPassword: '' });
 				this.setState({ accountPhone: '' });
 				this.setState({ accountType: '' });
 				delete accountData.accountsPage.Editor;
@@ -136,6 +165,7 @@ class Account extends Component {
 				this.setState({ accountName: '' });
 				this.setState({ accountEmail: '' });
 				this.setState({ accountPassword: '' });
+				this.setState({ reenterPassword: '' });
 				this.setState({ accountPhone: '' });
 				this.setState({ accountType: '' });
 				delete accountData.accountsPage.Merchant;
@@ -144,6 +174,7 @@ class Account extends Component {
 				this.setState({ accountName: '' });
 				this.setState({ accountEmail: '' });
 				this.setState({ accountPassword: '' });
+				this.setState({ reenterPassword: '' });
 				this.setState({ accountPhone: '' });
 				this.setState({ accountType: '' });
 				delete accountData.accountsPage.Customer;
@@ -302,6 +333,8 @@ class Account extends Component {
 											type="password"
 											className="form"
 											id="password"
+											maxLength="8"
+											pattern="[a-zA-Z0-9!?]{8}"
 											onInput={(e) => this.onInputChange(e, 'password')}
 											value={this.state.accountPassword}
 										/>
@@ -314,8 +347,10 @@ class Account extends Component {
 										type="password"
 										className="form"
 										id="password"
-										onInput={(e) => this.onInputChange(e, 'password')}
-										value={this.state.accountPassword}
+										maxLength="8"
+										pattern="[a-zA-Z0-9!?]{8}"
+										onInput={(e) => this.onInputOtherChange(e, 'password')}
+										value={this.state.reenterPassword}
 									/>
 								</div>
 								<div className="acc-form-group">
@@ -323,9 +358,11 @@ class Account extends Component {
 										<label for="phone">Phone</label>
 										<input
 											name="phone"
-											type="text"
+											type="tel"
 											className="form"
 											id="phone"
+											maxLength="10"
+											pattern="^[7-9]\d{9}$"
 											onInput={(e) => this.onInputChange(e, 'phone')}
 											value={this.state.accountPhone}
 										/>
