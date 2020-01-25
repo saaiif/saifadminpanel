@@ -100,30 +100,42 @@ input[type="date"] {
 	font-size: 20px;
 	background: #455c71;
 }
-.pdt-choose-file {
-	position: absolute;
-	top: 73%;
-	left: 54%;
-	background-color: red;
-	opacity: 0;
-	cursor: pointer;
-	height: 50px;
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	cursor: pointer !important;
 }
-.upload-btn {
-	font-size: 90%;
-	font-weight: 600;
+
+.btn {
+	padding: 15px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	width: 280px;
+	height: 50px;
+	margin: 0 30px;
+	margin-top: 39px;
 	color: #fff;
-	padding: 15px 28px;
-	text-align: center;
-	cursor: pointer;
-	margin-top: 12px;
 	background-color: #f5a623;
 	border: 2px solid #f5a623;
-	width: 89%;
-	margin-left: 30px;
+	font-size: 90%;
+	font-weight: 600;
+	cursor: pointer !important;
 }
-.upload-btn:hover {
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer !important;
+}
+
+.btn:hover {
 	background-color: transparent;
+	color: #f5a623;
 }
 
 .add-pdt-btn {
@@ -198,18 +210,18 @@ input[type="date"] {
 		display: block;
 	}
 
-	.inputs-con{
+	.inputs-con {
 		display: block;
 	}
 	.inputs-con input {
-		
 		width: 250px;
 		padding: 15px 10px;
 		border: 1px solid transparent;
 		margin: 10px 0;
 	}
 	.add-pdt-btn {
-		width: 199%;
+		width: 150%;
+		max-width: 250px;
 		/* margin-top: 111px; */
 	}
 
@@ -222,22 +234,11 @@ input[type="date"] {
 		display: block;
 		margin: auto;
 	}
-	.upload-btn {
-		cursor: pointer;
-		margin-top: 12px;
 
-		width: 236px;
-		margin-left: 6px;
-		margin-bottom: 12px;
-	}
-	.pdt-choose-file {
-		position: absolute;
-		top: 100%;
-		left: 54%;
-		background-color: red;
-		opacity: 0;
-		cursor: pointer;
-		height: 50px;
+	.btn {
+		width: 330%;
+		max-width: 250px;
+		margin: 16px 0;
 	}
 }
 
@@ -247,5 +248,22 @@ input[type="date"] {
 		display: block;
 		width: 80%;
 		margin: 4% auto;
+	}
+	.add-pdt-btn {
+		width: 712px;
+		margin-top: 10px;
+	}
+	.btn {
+		padding: 15px 15px;
+		/* font-size: 20px; */
+		font-weight: bold;
+		width: 275px;
+		height: 50px;
+		margin-top: 16px 16px;
+
+		/* margin-top: 16px; */
+	}
+	.img-section {
+		width: 38%;
 	}
 }

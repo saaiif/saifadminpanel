@@ -13,6 +13,11 @@ class Addproduct extends Component {
 		pic:
 			'https://www.lifewire.com/thmb/yLFRNBmwLcKDRnkaZ0B0nXgLAQM=/960x640/filters:no_upscale():max_bytes(150000):strip_icc()/upload-2c485b5b6fef41f39a05afb9adfce03e.png'
 	};
+	drawerbuttons = () => {
+		this.setState((prevState) => {
+			return { sidebartoggler: !prevState.sidebartoggler };
+		});
+	};
 
 	handleSubmit = (e) => {
 		e.preventDefault();
@@ -26,9 +31,9 @@ class Addproduct extends Component {
 		if (name === 'productname') {
 			e.target.value.length > 0 ? this.props.onPdtNameFieldTrue() : this.props.onPdtNameFieldFalse();
 			localStorage.setItem('productname', e.target.value);
-		} else if (name === 'description') {
+		} else if (name === 'unitSold') {
 			e.target.value.length > 0 ? this.props.onDescFieldTrue() : this.props.onDescFieldFalse();
-			localStorage.setItem('description', e.target.value);
+			localStorage.setItem('unitSold', e.target.value);
 		} else if (name === 'category') {
 			e.target.value.length > 0 ? this.props.onCategoryFieldTrue() : this.props.onCategoryFieldFalse();
 			localStorage.setItem('category', e.target.value);
@@ -42,7 +47,7 @@ class Addproduct extends Component {
 		var newProduct = {
 			name: localStorage.getItem('productname'),
 			stock: localStorage.getItem('unitsinstocks'),
-			unitSold: localStorage.getItem('description'),
+			unitSold: localStorage.getItem('unitSold'),
 			expireDate: localStorage.getItem('expirydate')
 		};
 
@@ -62,11 +67,7 @@ class Addproduct extends Component {
 		console.log(JSON.parse(localStorage.getItem('Response')));
 	};
 
-	drawerbuttons = () => {
-		this.setState((prevState) => {
-			return { sidebartoggler: !prevState.sidebartoggler };
-		});
-	};
+	
 
 	onPicUpload = (e) => {
 		var img = this.state.addPdtImg;
@@ -114,8 +115,8 @@ class Addproduct extends Component {
 									/>
 								</div>
 								<div>
-									<label for="description">Description</label>
-									<textarea rows="8" onInput={(e) => this.onInputChange(e, 'description')} required />
+									<label for="unitSold">Unit Sold</label>
+									<textarea rows="8" onInput={(e) => this.onInputChange(e, 'unitSold')} required />
 								</div>
 								<div>
 									<label for="category">Category</label>
@@ -159,17 +160,17 @@ class Addproduct extends Component {
 								</div>
 							</form>
 						</div>
+
 						<div className="img-section">
 							<img className="upload-img" src={this.state.pic} />
-							<div>
+							<div class="upload-btn-wrapper">
+								<button className="btn">UPLOAD PRODUCT IMAGE</button>
 								<input
-									id="fileInput"
 									type="file"
+									name="myfile"
 									accept="image/*"
-									className="pdt-choose-file"
 									onChange={(e) => this.onPicUpload(e)}
 								/>
-								<input type="button" className="upload-btn" value="UPLOAD PRODUCT IMAGE" />
 							</div>
 						</div>
 					</div>
@@ -199,10 +200,10 @@ const mapDispatchToProps = (dispatch) => {
 			dispatch({ type: 'PDTNAME_NO' });
 		},
 		onDescFieldTrue: () => {
-			dispatch({ type: 'DESCRIPTION_YES' });
+			dispatch({ type: 'unitSold_YES' });
 		},
 		onDescFieldFalse: () => {
-			dispatch({ type: 'DESCRIPTION_NO' });
+			dispatch({ type: 'unitSold_NO' });
 		},
 		onCategoryFieldTrue: () => {
 			dispatch({ type: 'CATEGORY_YES' });

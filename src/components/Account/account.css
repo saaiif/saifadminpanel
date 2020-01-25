@@ -149,10 +149,10 @@ option {
 	margin-top: 10px;
 }
 
-input[type="file" i] {
+/* input[type="file" i] {
 	width: 300px;
 	top: 64%;
-}
+} */
 
 .probtn {
 	padding: 20px 30px;
@@ -314,18 +314,12 @@ input[type="file" i] {
 		width: 540px;
 		font-size: 25px;
 	}
-	input[type="file" i] {
+	/* input[type="file" i] {
 		width: 41px;
-	}
+	} */
 }
 
-@media (min-width:411px){
-	input[type="file" i] {
-		width: 400px;
-		position: absolute;
-		bottom: 20%;
-	}
-}
+
 
 @media (max-width: 574px) {
 	.dropdown {
@@ -378,7 +372,7 @@ input[type="file" i] {
 	.spacebtw {
 		margin-right: 1px;
 	}
-	input[type="file" i] {
+	/* input[type="file" i] {
 		width: 41px;
-	}
+	} */
 }
