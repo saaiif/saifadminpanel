@@ -151,6 +151,7 @@ option {
 
 input[type="file" i] {
 	width: 300px;
+	top: 64%;
 }
 
 .probtn {
@@ -256,9 +257,9 @@ input[type="file" i] {
 		width: 90%;
 		font-size: 18px;
 	}
-	input[type="file" i] {
-		width: 41px;
-	}
+	/* input[type="file" i] {
+		width: px;
+	} */
 }
 
 @media (max-width: 1024px) {

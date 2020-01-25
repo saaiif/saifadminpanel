@@ -1,206 +1,220 @@
-.add-page
-{
-    margin:0;
-    color: #fff;
-    background-color: #4e657a;
-}
-.add-container
-{
-    margin:4% 23%;
-    background-color: #435c70;
-}
-.add-container h2
-{
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    margin-left:40px;
-    padding-top:40px;
-}
-.sections-con
-{
-    margin:40px;
-    display: flex;
-}
-.detail-section
-{
-    width:50%;
-}
-.detail-section input,textarea,.select-cat
-{
-    padding: 19px 18px;
-    border-radius: 0;
-    height: 15px;
-    background-color: #54657d;
-    color: #fff;
-    border: 0;
-    display: block;
-    width:185px;
-    margin-top:10px;
-    margin-right:25px;
-    margin-bottom:20px;
-    font-family: 'Bree Serif', serif;
-}
-#name,.select-cat,textarea
-{
-    width:88%;
-}
-.select-cat
-{
-    width:97%;
-    height:50px;
-    color: #acc6de;
-    font-size: 17px;
-    padding:14px 20px;
-}
-textarea
-{
-    height: 100px;
-}
-.inputs-con
-{
-    display: flex;
-    box-sizing: border-box;
-}
-.img-section
-{
-    width:50%;
-}
-.upload-img
-{
-    background-color:#aaa;
-    width:89%;
-    height:50%;
-    margin-left:30px;
-}
-.img-section i
-{
-    padding:15px;
-    margin-left:39%;
-    margin-top:30%;
-    border-radius: 50%;
-    font-size: 20px;
-    background: #455c71;
-}
-.pdt-choose-file
-{
-    position: absolute;
-    top:73%;
-    left:54%;
-    background-color: red;
-    opacity: 0;
-    cursor: pointer;
-    height:50px;
-}
-.upload-btn
-{
-    font-size: 0.8rem;
-    color: #fff;
-    padding: 15px 28px;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 12px;
-    background-color: #f5a623;
-    border: 2px solid #f5a623;
-    width:89%;
-    margin-left: 30px;
-    font-weight: bold;
-}
-.upload-btn:hover
-{
-    background-color: transparent;
-}
-
-.add-pdt-btn
-{
-    margin-left:0px;
-    margin-right:40px;
-    width:197%;
-    padding:16px 20px;
-    margin-bottom: 40px;
-    background-color: #f5a623;
-    color: #fff;
-    border: 2px solid #f5a623;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.add-pdt-btn:hover{
-    background-color: #435c70;
-    color: #f5a623;
-    cursor: pointer;
-}
-
-@media (max-width: 574px)
-{
-.sections-con {
-    margin: 40px;
-    display: block;
+.add-page {
+	margin: 0;
+	color: #fff;
+	background-color: #4e657a;
 }
 .add-container {
-    margin: 55px 20px;
+	margin: 4% 23%;
+
+	background-color: #435c70;
 }
 .add-container h2 {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-    margin-left: 40px;
-    padding-top: 40px;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	padding-top: 40px;
 }
-#name
-{
-    width:380px;
-    height:40px;
+.sections-con {
+	margin: 40px;
+	display: flex;
 }
-.add-form label
-{
-    font-size:25px;
+.detail-section {
+	width: 50%;
 }
-textarea
-{
-    width:380px;
-    height:120px;
+.proName input{
+    background-color: #54657d;
+	color: #fff;
+    border: 0;
+    height: 50px;
+    padding: 19px 18px;
+    margin: 10px 0;
 }
-.detail-section input
-{
-    width:380px;
-    height:40px;
+textarea,
+.select-cat {
+	padding: 19px 18px;
+	border-radius: 0;
+	height: 15px;
+	background-color: #54657d;
+	color: #fff;
+	border: 0;
+	display: block;
+	width: 185px;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	font-family: 'Bree Serif', serif;
+}
+#name,
+.select-cat,
+textarea {
+	width: 88%;
+}
+
+.inputs-con input{
+    background-color: #54657d;
+    color: #fff;
+    width: 150px;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    margin: 10px 0;
+
+}
+
+input[type="number"]{
+   height: 52px;
+}
+.select-cat {
+	width: 88%;
+	height: 50px;
+	color: #acc6de;
+	font-size: 17px;
+	padding: 14px 20px;
+}
+textarea {
+	height: 100px;
+}
+.inputs-con {
+	display: flex;
+	box-sizing: border-box;
+}
+input[type="date"] {
+	padding: 2 -20px;
+
+	display: inline-block;
+	justify-content: space-evenly;
+}
+.img-section {
+	width: 50%;
 }
 .upload-img {
-    width: 420px;
-    height: 310px;
-    margin-left: 0;
+	background-color: #aaa;
+	width: 89%;
+	height: 50%;
+	margin-left: 30px;
 }
 .img-section i {
-    margin-left: 180px;
-    margin-top: 130px;
-    border-radius: 50%;
-    font-size: 20px;
+	padding: 15px;
+	margin-left: 39%;
+	margin-top: 30%;
+	border-radius: 50%;
+	font-size: 20px;
+	background: #455c71;
+}
+.pdt-choose-file {
+	position: absolute;
+	top: 73%;
+	left: 54%;
+	background-color: red;
+	opacity: 0;
+	cursor: pointer;
+	height: 50px;
 }
 .upload-btn {
-    padding: 23px 28px;
-    margin-top: 45px;
-    width: 420px;
-    font-size: 20px;
-    margin-left: 0px;
+	font-size: 90%;
+    font-weight: 600;
+	color: #fff;
+	padding: 15px 28px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 12px;
+	background-color: #f5a623;
+	border: 2px solid #f5a623;
+	width: 89%;
+	margin-left: 30px;
 }
+.upload-btn:hover {
+	background-color: transparent;
+}
+
 .add-pdt-btn {
-    margin-left: 0px;
-    margin-right: 40px;
-    width: 420px;
-    margin-top:0;
-    margin-bottom: 40px;
+	margin-left: 0px;
+	margin-right: 40px;
+	width: 197%;
+	padding: 16px 20px;
+	margin-bottom: 40px;
+	background-color: #f5a623;
+	color: #fff;
+	border: 2px solid #f5a623;
+	font-size: 90%;
+    font-weight: 600;
 }
-.select-cat
-{
-    font-size:25px;
-    padding:10px;
-    width:415px;
-    padding-top:20px;
-    padding-bottom:20px;
-    height:70px;
+
+.add-pdt-btn:hover {
+	background-color: #435c70;
+	color: #f5a623;
+	cursor: pointer;
 }
-.inputs-con
-{
-    display:block;
+
+@media (max-width: 574px) {
+	.sections-con {
+		margin: 40px;
+		display: block;
+	}
+	.add-container {
+		margin: 55px 20px;
+	}
+	.add-container h2 {
+		font-size: 1.6rem;
+		margin-bottom: 30px;
+		margin-left: 40px;
+		padding-top: 40px;
+	}
+	#name {
+		width: 380px;
+		height: 40px;
+	}
+	.add-form label {
+		font-size: 25px;
+	}
+	textarea {
+		width: 380px;
+		height: 120px;
+	}
+	.detail-section input {
+		width: 380px;
+		height: 40px;
+	}
+	.upload-img {
+		width: 420px;
+		height: 310px;
+		margin-left: 0;
+	}
+	.img-section i {
+		margin-left: 180px;
+		margin-top: 130px;
+		border-radius: 50%;
+		font-size: 20px;
+	}
+	.upload-btn {
+		padding: 23px 28px;
+		margin-top: 45px;
+		width: 420px;
+		font-size: 20px;
+		margin-left: 0px;
+	}
+	.add-pdt-btn {
+		margin-left: 0px;
+		margin-right: 40px;
+		width: 420px;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+	.select-cat {
+		font-size: 25px;
+		padding: 10px;
+		width: 415px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 70px;
+	}
+	.inputs-con {
+		display: block;
+	}
 }
+
+@media (max-width: 1125px) {
+	.add-container {
+		margin: 4% 13%;
+	}
 }

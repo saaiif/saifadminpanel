@@ -83,7 +83,7 @@ class Addproduct extends Component {
 	render() {
 		return (
 			<div className="add-page">
-				<div className="extra-space">hi</div>
+			
 				<div className="add-container">
 					<div>
 						<h2>Add Product</h2>
@@ -91,7 +91,8 @@ class Addproduct extends Component {
 					<div className="sections-con">
 						<div className="detail-section">
 							<form className="add-form" onSubmit={this.handleSubmit}>
-								<div>
+								<div className="proName">
+								
 									<label for="name">Product Name</label>
 									<input
 										id="name"
@@ -106,7 +107,7 @@ class Addproduct extends Component {
 									<textarea rows="8" onInput={(e) => this.onInputChange(e, 'description')} required />
 								</div>
 								<div>
-									<label for="category">category</label>
+									<label for="category">Category</label>
 									<select
 										id="category"
 										className="select-cat"
@@ -120,10 +121,10 @@ class Addproduct extends Component {
 									</select>
 								</div>
 								<div className="inputs-con">
-									<div>
+									<div className="expiry_date">
 										<label for="expiry_date">Expire Date</label>
 										<input
-											id="expiry_date"
+											
 											name="expiry_date"
 											type="date"
 											required
@@ -163,7 +164,7 @@ class Addproduct extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="extra-space">hi</div>
+			
 			</div>
 		);
 	}
