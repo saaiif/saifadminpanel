@@ -59,6 +59,7 @@ class Addproduct extends Component {
 		var pdtlist = JSON.parse(localStorage.getItem('Response')).productsPage.products;
 		var list = JSON.parse(localStorage.getItem('NewProduct'));
 		var newPdtList = pdtlist.push(JSON.parse(localStorage.getItem('NewProduct')));
+		alert("Product added successfully");
 		console.log(list);
 		console.log(pdtlist);
 		var object = JSON.parse(localStorage.getItem('Response'));
@@ -66,8 +67,6 @@ class Addproduct extends Component {
 		localStorage.setItem('Response', JSON.stringify(object));
 		console.log(JSON.parse(localStorage.getItem('Response')));
 	};
-
-	
 
 	onPicUpload = (e) => {
 		var img = this.state.addPdtImg;
@@ -114,9 +113,15 @@ class Addproduct extends Component {
 										required
 									/>
 								</div>
-								<div>
+								<div className="unitsold-con">
 									<label for="unitSold">Unit Sold</label>
-									<textarea rows="8" onInput={(e) => this.onInputChange(e, 'unitSold')} required />
+									<input
+										name="unitSold"
+										type="number"
+										onInput={(e) => this.onInputChange(e, 'unitSold')}
+										required
+										required
+									/>
 								</div>
 								<div>
 									<label for="category">Category</label>

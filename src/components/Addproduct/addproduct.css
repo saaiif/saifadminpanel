@@ -30,7 +30,7 @@
 	padding: 19px 18px;
 	margin: 10px 0;
 }
-textarea,
+
 .select-cat {
 	padding: 19px 18px;
 	border-radius: 0;
@@ -40,6 +40,22 @@ textarea,
 	border: 0;
 	display: block;
 	width: 185px;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	font-family: 'Bree Serif', serif;
+}
+
+.unitsold-con > input {
+	font-size: 1.1rem;
+	padding: 19px 18px;
+	border-radius: 0;
+	height: 15px;
+	background-color: #54657d;
+	color: #fff;
+	border: 0;
+	display: block;
+	width: 285px;
 	margin-top: 10px;
 	margin-right: 25px;
 	margin-bottom: 20px;
@@ -73,6 +89,10 @@ input[type="number"] {
 textarea {
 	height: 100px;
 }
+/* .unitsold-con{
+	display: flex;
+	box-sizing: border-box;
+} */
 .inputs-con {
 	display: flex;
 	box-sizing: border-box;
@@ -116,6 +136,7 @@ input[type="date"] {
 	height: 50px;
 	margin: 0 30px;
 	margin-top: 39px;
+	/* margin-bottom: -100px; */
 	color: #fff;
 	background-color: #f5a623;
 	border: 2px solid #f5a623;
@@ -143,7 +164,7 @@ input[type="date"] {
 	margin-right: 40px;
 	width: 197%;
 	padding: 16px 20px;
-	margin-bottom: 40px;
+	margin-top: 40px;
 	background-color: #f5a623;
 	color: #fff;
 	border: 2px solid #f5a623;
