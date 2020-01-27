@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './addproduct.css';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Navbars from '../Navbar/navbar2';
 import Footer from '../Footer/footer';
@@ -31,9 +31,9 @@ class Addproduct extends Component {
 		if (name === 'productname') {
 			e.target.value.length > 0 ? this.props.onPdtNameFieldTrue() : this.props.onPdtNameFieldFalse();
 			localStorage.setItem('productname', e.target.value);
-		} else if (name === 'unitSold') {
+		} else if (name === 'description') {
 			e.target.value.length > 0 ? this.props.onDescFieldTrue() : this.props.onDescFieldFalse();
-			localStorage.setItem('unitSold', e.target.value);
+			localStorage.setItem('description', e.target.value);
 		} else if (name === 'category') {
 			e.target.value.length > 0 ? this.props.onCategoryFieldTrue() : this.props.onCategoryFieldFalse();
 			localStorage.setItem('category', e.target.value);
@@ -47,7 +47,7 @@ class Addproduct extends Component {
 		var newProduct = {
 			name: localStorage.getItem('productname'),
 			stock: localStorage.getItem('unitsinstocks'),
-			unitSold: localStorage.getItem('unitSold'),
+			unitSold: localStorage.getItem('description'),
 			expireDate: localStorage.getItem('expirydate')
 		};
 
@@ -59,7 +59,8 @@ class Addproduct extends Component {
 		var pdtlist = JSON.parse(localStorage.getItem('Response')).productsPage.products;
 		var list = JSON.parse(localStorage.getItem('NewProduct'));
 		var newPdtList = pdtlist.push(JSON.parse(localStorage.getItem('NewProduct')));
-		alert("Product added successfully");
+		alert('Product added successfully');
+
 		console.log(list);
 		console.log(pdtlist);
 		var object = JSON.parse(localStorage.getItem('Response'));
@@ -113,13 +114,12 @@ class Addproduct extends Component {
 										required
 									/>
 								</div>
+
 								<div className="unitsold-con">
-									<label for="unitSold">Unit Sold</label>
+									<label for="description">Unit Sold</label>
 									<input
-										name="unitSold"
 										type="number"
-										onInput={(e) => this.onInputChange(e, 'unitSold')}
-										required
+										onInput={(e) => this.onInputChange(e, 'description')}
 										required
 									/>
 								</div>
@@ -205,10 +205,10 @@ const mapDispatchToProps = (dispatch) => {
 			dispatch({ type: 'PDTNAME_NO' });
 		},
 		onDescFieldTrue: () => {
-			dispatch({ type: 'unitSold_YES' });
+			dispatch({ type: 'DESCRIPTION_YES' });
 		},
 		onDescFieldFalse: () => {
-			dispatch({ type: 'unitSold_NO' });
+			dispatch({ type: 'DESCRIPTION_NO' });
 		},
 		onCategoryFieldTrue: () => {
 			dispatch({ type: 'CATEGORY_YES' });

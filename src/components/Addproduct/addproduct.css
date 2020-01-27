@@ -46,7 +46,7 @@
 	font-family: 'Bree Serif', serif;
 }
 
-.unitsold-con > input {
+.unitsold-con>input{
 	font-size: 1.1rem;
 	padding: 19px 18px;
 	border-radius: 0;
@@ -59,6 +59,7 @@
 	margin-top: 10px;
 	margin-right: 25px;
 	margin-bottom: 20px;
+	height: 100px;
 	font-family: 'Bree Serif', serif;
 }
 #name,
