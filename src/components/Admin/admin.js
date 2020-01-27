@@ -96,13 +96,13 @@ class Admin extends Component {
 						</div>
 					</div>
 					<div className="order-list">
-                        <div>
-                        <h2 className="ol-title">Orders List</h2>
-                        <Order/>
-                        </div>
-                    </div>
+						<div>
+							<h2 className="ol-title">Orders List</h2>
+							<Order />
+						</div>
+					</div>
 				</div>
-				<div className="extra-space"></div>
+				<div className="extra-space" />
 				<Footer />
 			</div>
 		);

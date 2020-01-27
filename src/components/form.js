@@ -25,7 +25,6 @@ class Form extends Component {
 			[event.target.name]: event.target.value
 		});
 	}
-	
 
 	submitForm(event) {
 		event.preventDefault();
@@ -62,8 +61,7 @@ class Form extends Component {
 								onChange={this.onChange}
 								required
 							/>
-							
-							
+
 							<br />
 							<label>Password</label>
 							<br />
@@ -76,10 +74,11 @@ class Form extends Component {
 								onChange={this.onChange}
 								required
 							/>
-							
-						
+
 							<br />
-							<button className={classes.loginbtn} onClick={this.state.password}>Login</button>
+							<button className={classes.loginbtn} onClick={this.state.password}>
+								Login
+							</button>
 							<br />
 							<button className={classes.tryAgain}>Forgot your password?</button>
 						</form>

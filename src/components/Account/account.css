@@ -240,7 +240,8 @@ option {
 		width: 560px;
 		z-index: 1;
 	}
-	.upload-btn-wrapper,.btn {
+	.upload-btn-wrapper,
+	.btn {
 		width: 95%;
 		display: block;
 		margin-right: 20px;
@@ -267,7 +268,7 @@ option {
 		width: 90%;
 		font-size: 18px;
 	}
-	
+
 	/* input[type="file" i] {
 		width: px;
 	} */
@@ -281,7 +282,6 @@ option {
 @media (max-width: 1024px) {
 	.update-btn {
 		width: 450px;
-		
 	}
 	.acc-form-group input {
 		width: 480px;
@@ -290,7 +290,8 @@ option {
 		width: 450px;
 		z-index: 1;
 	}
-	.upload-btn-wrapper,.btn {
+	.upload-btn-wrapper,
+	.btn {
 		width: 150px;
 		font-size: 0.6rem;
 		padding: 2px;
@@ -362,7 +363,8 @@ option {
 		width: 248px;
 		z-index: 1;
 	}
-	.upload-btn-wrapper,.btn {
+	.upload-btn-wrapper,
+	.btn {
 		width: 50%;
 		font-size: 0.8rem;
 		/* padding: 2px; */
