@@ -23,25 +23,6 @@
 .time {
 	color: #bdcbd8;
 }
-/* 
-@media (max-width: 574px) {
-	.noti-con {
-		height: 850px;
-		margin-bottom: 60px;
-	}
-	.notification {
-		width: 380px;
-		font-size: 150%;
-		height: 180px;
-	}
-	.noti-images {
-		width: 90px;
-		height: 90px;
-	}
-	.notification .message {
-		font-size: 25px;
-	}
-} */
 
 @media (max-width: 955px) {
 	.notification {
