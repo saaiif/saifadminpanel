@@ -163,3 +163,23 @@ input:focus {
 		/* margin-top: 400px; */
 	}
 }
+
+@media (max-width: 411px) {
+	.loginform {
+		width: 400px;
+		background-color: rgb(67, 92, 112);
+		box-shadow: rgb(69, 92, 113) 1px 1px 5px 0px;
+		padding: 40px;
+		box-sizing: border-box;
+		min-height: 550px;
+		line-height: 1.5;
+		min-height: 40vh;
+		max-width: 90%;
+		z-index: 100;
+		margin: auto;
+		margin-bottom: 31.5%;
+		margin-top: 31.5%;
+
+		/* margin-top: 400px; */
+	}
+}
