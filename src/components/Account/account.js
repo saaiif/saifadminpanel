@@ -287,7 +287,7 @@ class Account extends Component {
 								/>
 							</div>
 							<div className="highcursor">
-								<div class="upload-btn-wrapper">
+								<div className="upload-btn-wrapper">
 									<button className="btn">UPLOAD NEW PHOTO</button>
 									<input
 										type="file"
