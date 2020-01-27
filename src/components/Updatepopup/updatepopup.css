@@ -6,11 +6,11 @@
 	left: 30%;
 	box-sizing: border-box;
 	border: 2px solid rgb(75, 69, 69);
-	/* border-radius: 20px; */
+	border-radius: 0.5rem;
 	box-shadow: 0 0 8px black;
 	background-color: #ffffff;
 	opacity: 0.8;
-	/* transition-duration: 2s; */
+	transition-duration: 2s;
 	transition: all 0.5s ease-out;
 }
 .upopup-box i {
@@ -20,6 +20,7 @@
 	margin-left: 92%;
 	margin-top: 16px;
 	font-size: 20px;
+	cursor: pointer;
 }
 .upopup-message {
 	padding: 40px;

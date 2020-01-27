@@ -180,7 +180,7 @@ class Account extends Component {
 				delete accountData.accountsPage.Customer;
 				break;
 			default:
-				alert('Cannot Delete Default Account');
+				alert('Sorry you cant change default setting 😢');
 		}
 		localStorage.setItem('Response', JSON.stringify(accountData));
 		this.setState({ pageData: JSON.parse(localStorage.getItem('Response')).accountsPage });
@@ -238,7 +238,7 @@ class Account extends Component {
 						object.accountsPage.Merchant.profilePic = imgSrc;
 						break;
 					default:
-						alert('Cant change default image');
+						alert('Sorry you cant change default image.😢');
 						break;
 				}
 				localStorage.setItem('Response', JSON.stringify(object));
@@ -374,7 +374,7 @@ class Account extends Component {
 									onClick={() =>
 										this.state.accountType !== ''
 											? this.props.onShowPopup()
-											: alert('CANT UPDATE DEFAULT ACCOUNT')}
+											: alert('Sorry you cant change default setting 😢')}
 								>
 									UPDATE YOUR PROFILE
 								</button>
