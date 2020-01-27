@@ -81,8 +81,7 @@ class Popup extends Component {
 							<i class="fas fa-times" onClick={this.onCrossClick} />
 						</div>
 						<form className="popup-form" onSubmit={(e) => this.onSubmit(e)}>
-							<label>Write Here...</label>
-							<input type="text" onInput={(e) => this.onInputCategory(e)} />
+							<input type="text" placeholder="Write Here" onInput={(e) => this.onInputCategory(e)} />
 							<button type="submit" className="popup-btn" onClick={this.onAddClick}>
 								ADD
 							</button>
