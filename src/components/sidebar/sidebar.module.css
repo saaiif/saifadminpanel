@@ -42,6 +42,10 @@
 	transition: all 6s ease-in;
 }
 
+.menuItems li a {
+	cursor: pointer;
+}
+
 .logout a {
 	text-decoration: none;
 	color: #fff;
@@ -119,6 +123,9 @@
 		text-align: center;
 		cursor: pointer;
 		margin-top: 56px;
+	}
+	.menuItems li a {
+		cursor: pointer;
 	}
 }
 
